@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+
+  <body class="bg-gallery">
+    <div class="place-center full-h" id="gallery-container">
+      <div class="player-container">
+        <div class="background-image img-gallery"></div>
+        <h1 class="text-gallery">My MusicPlayer</h1>
+      </div>
+    </div>
+
+    <div class="music-buttons-container">
+      <button
+        class="musicButton"
+        onclick="myMusicPlayer.prevSong();myMusicGallery.updatePlayingSongInfo()"
+      >
+        Prev
+      </button>
+      <button
+        class="musicButton"
+        onclick="myMusicPlayer.pause();myMusicGallery.updatePlayingSongInfo()"
+      >
+        pause
+      </button>
+      <button
+        class="musicButton"
+        onclick="myMusicPlayer.play();myMusicGallery.updatePlayingSongInfo()
+        ;"
+      >
+        play
+      </button>
+      <button
+        class="musicButton"
+        onclick="myMusicPlayer.nextSong();myMusicGallery.updatePlayingSongInfo()"
+      >
+        next
+      </button>
+    </div>
+
+    <script src="/JS/clases.js"></script>
+    <script src="/JS/declarations.js"></script>
+  </body>
+</html>
